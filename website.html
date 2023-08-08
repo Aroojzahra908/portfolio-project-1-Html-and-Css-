@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,800;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color:rgb(0, 0, 33);
+            color: rgb(227, 229, 236);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Set text alignment */
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(4, 4, 41);
+            ;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* remove  bullets here  */
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            text-decoration: none;
+            color: white;
+            font-size: 1.01rem;
+        }
+
+        main hr {
+            border: 0;
+            background: lightblue;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .left {
+            font-size: 2.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 130px 0;
+            align-items: flex-start;
+        }
+
+        .firstSection>div {
+            width: 30%;
+
+        }
+
+        .leftSection {
+            font-size: 1.5rem;
+
+
+            /* Add the following styles to align content to the left */
+
+        }
+
+        .leftSection .buttons{
+            padding: 50px 0px;
+        }
+            .leftSection .btn {
+                padding: 12px;
+                background: #1e2167;
+                color:white;
+                border:2px solid white;
+                border-radius: 6px;
+                font: size 20px;
+                cursor: pointer;
+
+            }
+        .rightSection {
+            /*  background-color: rgb(94, 17, 17);*/
+            width: 30%;
+            /* Add the following styles to align content to the right */
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .purple {
+            color: rgb(109, 44, 171);
+        }
+
+        #element {
+            color: rgb(109, 44, 171);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .text-grey {
+            color: gray;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 77vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 120px;
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 70px;
+            width: 150px;
+            font-size: 15px;
+
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 75px;
+            color: grey;
+            width: 150px;
+            font-size: 9px;
+        }
+
+        footer {
+            background-color: #0e0e1a;
+           
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+        .footer ul{
+            list-style: none;
+        }
+        .footer > div{
+            width:223px;
+        }
+        footer .footer-rights{
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"> Arooj Zahra Portfolio </div>
+
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                HI, My Name is <span class="purple">Arooj </span>
+                <div> And I am a passionate</div>
+                <span id="element"></span>
+            <div class="buttons">
+                <button class="btn"> Download Resume</button>
+                <button class="btn"> Visit Github </button>
+            </div>
+        </div>
+            <div class="rightSection">
+                <img src="pngwing.com (5).png" alt="Image Alt Text" width="300" height="500">
+
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-grey"> What i have done so far </span>
+            <h1>Work Experience </h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="html.png">
+                    <div class="vertical-title">
+                        HTML developer (2020-2021)
+                    </div>
+
+                    <div class="vertical-desc">
+                        HyperText Markup Language (HTML) is the set of markup symbols
+                        or codes inserted into a file intended for display on the Internet.
+                        The markup tells web browsers how to display a web page's words and
+                        images.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="css-logo.png">
+                    <div class="vertical-title">
+                        CSS developer (2021-2022)
+                    </div>
+                    <div class="vertical-desc">
+                        HyperText Markup Language (HTML) is the set of markup symbols
+                        or codes inserted into a file intended for display on the Internet.
+                        The markup tells web browsers how to display a web page's words and
+                        images.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="download.png">
+                    <div class="vertical-title">
+                        Javascript Dev (2022-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        HyperText Markup Language (HTML) is the set of markup symbols
+                        or codes inserted into a file intended for display on the Internet.
+                        The markup tells web browsers how to display a web page's words and
+                        images.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="ts.png">
+                    <div class="vertical-title">
+                        Typescript (2023)
+                    </div>
+                    <div class="vertical-desc">
+                        HyperText Markup Language (HTML) is the set of markup symbols
+                        or codes inserted into a file intended for display on the Internet.
+                        The markup tells web browsers how to display a web page's words and
+                        images.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="node.png">
+                    <div class="vertical-title">
+                        Node.js (2023)
+                    </div>
+                    <div class="vertical-desc">
+                        HyperText Markup Language (HTML) is the set of markup symbols
+                        or codes inserted into a file intended for display on the Internet.
+                        The markup tells web browsers how to display a web page's words and
+                        images.
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class=" footer-First">
+                <h2> Arooj's Developer Portfolio</h2>
+            </div>
+            <div class="footer-Second">
+                <ul>
+                    <li>Contact us</li>
+                    <li>Email</li>
+                    <li>Location</li>
+                    <li>Services</li>
+                    <li>About</li>
+                </ul>
+            </div>
+            <div class="footer-Third">
+                <ul>
+                    <li>Contact us</li>
+                    <li>Email</li>
+                    <li>Location</li>
+                    <li>Services</li>
+                    <li>About</li>
+                </ul>
+            </div>
+            <div class="footer-Fourth">
+                <ul>
+                    <li>Contact us</li>
+                    <li>Email</li>
+                    <li>Location</li>
+                    <li>Services</li>
+                    <li>About</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            www.Aroojsportfolio.com | All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer ', 'Web 3.0 AI and Mataverse Developer'],
+            typeSpeed: 50,
+        });
+
+
+    </script>
+</body>
+
+</html>
